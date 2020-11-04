@@ -1,0 +1,17 @@
+/* MOBILE & TABLET : width < 1024px*/
+@media only screen and (max-width: 63.9375em){
+
+}
+
+/* TABLET : 740px <= width < 1024px  */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .wide {
+        max-width: 644px;
+    }
+}
+
+
+/* MOBILE : width < 740px */
+@media only screen and (min-width: 46.1875em)  {
+    
+}

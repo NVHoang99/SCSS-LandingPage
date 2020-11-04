@@ -1,0 +1,27 @@
+.u-line {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 550px;
+    background-color: rgba(255, 255, 255, 0.25);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: $color-white;
+}
+
+.u-line--vertical {
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 9.5rem;
+    background-color: $text-social;
+}
+
+.overlay {
+    opacity: 0.6;
+    background-color: $color-black;
+    @include overlay;
+    z-index: -1;
+}

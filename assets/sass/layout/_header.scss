@@ -1,0 +1,130 @@
+.header {
+    background-image: url("../image/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    min-height: 780px;
+    &-logo {
+        height: 9.6rem;
+        position: relative;
+        z-index: 10;
+        a {
+            display: block;
+            outline: 0;
+            border: none;
+            width: 8rem;
+            position: absolute;
+            top: 50%;
+            left: 4rem;
+            transform: translateY(-50%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &-main {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+
+        &__button {
+            padding-top: 6rem;
+            max-width: 100rem !important;
+
+            a:not(:last-child) {
+                margin-right: 1.5rem;
+            }
+        }
+
+        &__social {
+            position: absolute;
+            top: 50%;
+            right: 5rem;
+            transform: translateY(-50%);
+            ul li {
+                list-style: none;
+                padding: 2.5rem 0;
+                position: relative;
+                a {
+                    text-decoration: none;
+                    color: $color-white;
+                    width: 33px;
+                    height: 33px;
+                    i {
+                        font-size: 1.4rem;
+                        right: 0;
+                        text-align: center;
+                        display: inline-block;
+                        width: 33px;
+                        height: 33px;
+                        line-height: calc(33px - 4px);
+                        border: 2px solid $color-white;
+                        border-radius: 50%;
+                        color: $color-white;
+                    }
+                    span {
+                        line-height: 33px;
+                        color: $text-social;
+                        right: 4.5rem;
+                        font-size: 1.3rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        -webkit-transform: scale(0);
+                        -ms-transform: scale(0);
+                        transform: scale(0);
+                        -webkit-transition: all 0.5s ease-out;
+                        transition: all 0.5s ease-out;
+                        -webkit-transform-origin: 100% 50%;
+                        -ms-transform-origin: 100% 50%;
+                        transform-origin: 100% 50%;
+                    }
+                    i,
+                    span {
+                        position: absolute;
+                    }
+                }
+            }
+            ul li:hover span {
+                opacity: 1;
+                visibility: visible;
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+
+    &-scroll {
+        position: absolute;
+        right: 9.5rem;
+        bottom: 8rem;
+        a {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 550;
+            letter-spacing: 0.3rem;
+            i,
+            span {
+                vertical-align: middle;
+            }
+            i {
+                color: $text-social;
+                font-size: 1.7rem;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .u-line--vertical {
+        right: 6.5rem;
+        bottom: 0;
+    }
+}
+
+

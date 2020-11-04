@@ -1,0 +1,98 @@
+body {
+    line-height: 1.6rem;
+    font-family: "montserrat-medium", sans-serif;
+}
+
+.heading-primary {
+    padding-top: 15rem;
+    max-width: 1000px !important;
+    z-index: 10;
+    @include heading-text-color($text-social);
+    &__sub {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 1.2rem;
+        font-weight: 800;
+    }
+    &__main {
+        font-size: 6rem;
+        line-height: 1.3;
+    }
+}
+
+.heading-secondary {
+    text-align: center;
+    padding-bottom: 5rem;
+    @include heading-text-color($color-black);
+}
+
+.paragraph {
+    font-size: 2.4rem;
+    line-height: 1.75;
+    text-align: center;
+    max-width: 1000px;
+    padding-top: 5rem;
+}
+
+.about {
+    h5 {
+        margin-top: 1.8rem;
+        font-size: 1.8rem;
+        line-height: 1.333;
+        background: #4568dc; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+            to right,
+            #b06ab3,
+            #4568dc
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+            to right,
+            #b06ab3,
+            #4568dc
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.services {
+    .heading-secondary {
+        @include heading-text-color($text-social, $color-black);
+    }
+    &-list-item__text {
+        margin-left: 10rem;
+        max-width: 45rem;
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 1.8rem;
+            line-height: 3rem;
+        }
+        p {
+            font-size: 1.7rem;
+            line-height: 1.7;
+            color: $text-service;
+            font-family: "lora-regular", sans-serif;
+        }
+    }
+}
+
+.work {
+    .heading-secondary {
+        @include heading-text-color($text-social, $color-white);
+    }
+}
+
+.client {
+    .heading-secondary {
+        @include heading-text-color($text-social, $color-black);
+    }
+}
+
+.contact {
+    .heading-secondary {
+        margin-bottom: 5rem;
+        @include heading-text-color($text-social, $color-white);
+    }
+}

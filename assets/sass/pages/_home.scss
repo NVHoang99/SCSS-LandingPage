@@ -1,0 +1,319 @@
+.about {
+    position: relative;
+    padding-bottom: 10rem;
+    background: linear-gradient(
+        to right,
+        rgba($text-social, 0.5),
+        $text-social
+    );
+
+    .u-line--vertical {
+        right: 6.5rem;
+        top: 0;
+        background-color: $color-white;
+    }
+
+    &__stats {
+        text-align: center;
+        .stats-col {
+            margin: 5.4rem 0;
+            padding: 0 2rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 1px solid rgba(255, 255, 255, 0.25);
+            .stats-count {
+                font-size: 8rem;
+                font-weight: 600;
+                line-height: 1;
+                color: $color-white;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.services {
+    padding-bottom: 5rem;
+    &-list-item {
+        margin-bottom: 3rem;
+        &__icon {
+            float: left;
+            padding-left: 3rem;
+            i {
+                color: $text-social;
+                font-size: 4rem;
+            }
+        }
+    }
+    .u-line {
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-bottom: 5rem;
+    }
+}
+
+.work {
+    &-content {
+        margin-top: -23rem !important;
+    }
+    .heading-wrap {
+        background-color: $color-black-light;
+        padding-bottom: 30rem;
+    }
+    .u-line::before {
+        background-color: rgba($color-white, 0.2);
+    }
+}
+
+.client {
+    background-color: $color-client;
+    margin-top: 15rem;
+    position: relative;
+    &-wrap {
+        text-align: center;
+        position: relative;
+    }
+    .slick {
+        &__slide {
+            outline: none;
+            display: block;
+            opacity: 0.55;
+            padding: 1.5rem 2.8rem;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+            img {
+                max-width: 100%;
+            }
+            &:hover,
+            &:focus {
+                opacity: 0.8;
+            }
+        }
+        &-slider ul {
+            display: block;
+            list-style: none;
+            width: 100%;
+            margin: 3rem 0 0 0;
+            padding-bottom: 5rem;
+            li {
+                display: inline-block;
+                padding: 9px;
+                cursor: pointer;
+                button {
+                    outline: none;
+                    border: 2px solid rgba($color-black, 0.3);
+                    width: 50px;
+                    height: 10px;
+                    background-color: transparent;
+                    font: 0/0 a;
+                }
+            }
+            li.slick-active,
+            li:hover {
+                button {
+                    background-color: rgba($color-black, 0.3);
+                    border: none;
+                }
+            }
+        }
+    }
+    .u-line {
+        background-color: rgba($color-black, 0.3);
+    }
+    &-testimonials {
+        margin-top: 10rem !important;
+        padding-bottom: 20rem;
+        text-align: center;
+        position: relative;
+        .testimonials {
+            &__slide {
+                padding: 0 150px;
+                outline: none;
+                p {
+                    font-family: "lora-regular", serif;
+                    font-size: 3rem;
+                    line-height: 1.8;
+                    color: #555;
+                    margin-bottom: 6rem;
+                }
+                img {
+                    height: 8.4rem;
+                    width: 8.4rem;
+                    border-radius: 50%;
+                    margin: 0 auto 1.2rem auto;
+                }
+            }
+            &__name {
+                color: $color-black;
+                display: block;
+                font-size: 1.7rem;
+                font-style: normal;
+                font-weight: 550;
+                line-height: 1.765;
+            }
+            &__pos {
+                font-size: 1.4rem;
+                display: block;
+                color: $text-service;
+            }
+            .slick-arrow {
+                outline: none;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 66px;
+                height: 66px;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                background-size: 30px 25px;
+                background-position: center;
+                border: none;
+                cursor: pointer;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                font: 0/0 a;
+                text-shadow: none;
+                color: transparent;
+                z-index: 2;
+            }
+            .slick-prev {
+                left: 0;
+                background-image: url("https://www.flaticon.com/svg/static/icons/svg/271/271218.svg");
+            }
+            .slick-next {
+                right: 0;
+                background-image: url("https://www.flaticon.com/svg/static/icons/svg/271/271226.svg");
+            }
+        }
+    }
+
+    .u-line--vertical {
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        background-color: $text-social;
+    }
+}
+
+.contact {
+    background-color: $color-black-2;
+    background-image: url("../image/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    padding-bottom: 12rem;
+    color: $color-white;
+    position: relative;
+    z-index: 0;
+    &-content {
+        max-width: 1000px !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: rgba(255, 255, 255, 0.4);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        font-size: 1.5rem;
+        line-height: 2;
+        .contact-form,
+        .contact-info {
+            padding: 0 5rem;
+        }
+
+        .contact-form {
+            margin-bottom: 3rem;
+            &__title {
+                margin-bottom: 6rem;
+                color: $color-white;
+                font-size: 1.3rem;
+                line-height: 1.385;
+                text-transform: uppercase;
+                letter-spacing: 0.16rem;
+            }
+            form {
+                fieldset {
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    input[type="email"],
+                    input[type="number"],
+                    input[type="search"],
+                    input[type="text"],
+                    input[type="tel"],
+                    input[type="url"],
+                    input[type="password"],
+                    textarea,
+                    select {
+                        display: block;
+                        height: 6rem;
+                        padding: 1.5rem 0;
+                        margin-bottom: 0.9rem;
+                        border: 0;
+                        outline: none;
+                        color: $color-white;
+                        font-size: 1.4rem;
+                        line-height: 3rem;
+                        width: 100%;
+                        background: transparent;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                        -webkit-transition: all 0.3s ease-in-out;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    textarea {
+                        min-height: 25rem;
+                        resize: vertical;
+                    }
+                    input[type="email"]:focus,
+                    input[type="number"]:focus,
+                    input[type="search"]:focus,
+                    input[type="text"]:focus,
+                    input[type="tel"]:focus,
+                    input[type="url"]:focus,
+                    input[type="password"]:focus,
+                    textarea:focus,
+                    select:focus {
+                        color: $color-white;
+                        border-bottom: 1px solid $color-green;
+                    }
+                    .form-field {
+                        position: relative;
+                        label {
+                            font-size: 1rem;
+                            font-weight: 600;
+                            line-height: 2.4rem;
+                            position: absolute;
+                            bottom: -1.2rem;
+                            right: 0;
+                            text-transform: uppercase;
+                            letter-spacing: 0.1rem;
+                            padding: 0 2rem;
+                            margin: 0;
+                            color: $color-white;
+                            background: $text-social;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                left: -5px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                border-top: 5px solid transparent;
+                                border-bottom: 5px solid transparent;
+                                border-right: 5px solid #39b54a;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay {
+        background-color: $color-black-2;
+        opacity: 0.8;
+    }
+
+    .u-line--vertical {
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+}

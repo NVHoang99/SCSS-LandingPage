@@ -1,0 +1,40 @@
+.btn {
+    &:link,
+    &:visited {
+        @extend %btn;
+    }
+
+    &:hover,
+    &:active {
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    &--white {
+        border: 2px solid $color-white;
+        color: $color-white;
+        letter-spacing: 0.25rem;
+        font-weight: 550;
+    }
+
+    &--green {
+        width: 100%;
+        background-color: $text-social;
+        color: $color-white;
+        border-color: $text-social;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        &:hover,
+        &:focus {
+            background-color: $color-green;
+            border-color: $color-green;
+            color: $color-white;
+        }
+    }
+}
+
+button {
+    @extend %btn;
+}

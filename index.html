@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glint</title>
+    <!-- reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/sass/main.css">
+    <!-- grid system-->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- photoswipe-->
+    <link rel="stylesheet" href="./node_modules/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" href="./node_modules/photoswipe/dist/default-skin/default-skin.css">
+    <!-- fontawesome-->
+    <link href="./assets/fonts/fontawesome-free-5.13.1-web/css/all.min.css" rel="stylesheet">
+    <!-- google font: Lora & Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- slick-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+    <section class="app">
+        <!-- HEADER-->
+        <header class="header">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="./assets/image/logo.webp" alt="homepage">
+                </a>
+            </div>
+
+            <nav class="header-nav">
+            </nav>
+
+            <div class="header-main">
+                <div class="wide heading-primary">
+                    <h3 class="heading-primary__sub">WELCOME TO GLINT</h3>
+                    <h2 class="heading-primary__main">
+                        We are a creative group <br>
+                        of people who design <br>
+                        influential brands and <br>
+                        digital experiences.
+                    </h2>
+                </div>
+
+                <div class="wide header-main__button">
+                    <a href="#" class="btn btn--white">START A PROJECT</a>
+                    <a href="#" class="btn btn--white">MORE ABOUT US</a>
+                </div>
+
+                <div class="header-main__social">
+                    <ul>
+                        <li>
+                            <a href="#0">
+                                <span>Facebook</span>
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <span>Twitter</span>
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <span>Instagram</span>
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <span>Behance</span>
+                                <i class="fab fa-behance" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <span>Dribbble</span>
+                                <i class="fab fa-dribbble" aria-hidden="true"></i>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-scroll">
+                <a href="#about-section">
+                    <i class="fas fa-angle-down"></i>
+                    <span>SCROLL DOWN</span>
+                </a>
+            </div>
+
+            <div class="u-line--vertical"></div>
+
+            <div class="overlay"></div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <section class="about" id="about-section">
+                <div class="wide heading-primary heading-secondary" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-delay="50">
+                    <h3 class="heading-primary__sub">HELLO THERE</h3>
+                    <h2 class="heading-primary__main">
+                        We Are Glint
+                    </h2>
+                </div>
+
+                <div class="u-line">
+                </div>
+
+                <p class="wide paragraph" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                    data-aos-delay="50">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt.
+                </p>
+
+                <div class="u-line--vertical"></div>
+
+                <div class="wide about__stats" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                    data-aos-delay="50">
+                    <div class="row">
+                        <div class="col l-3 stats-col">
+                            <div class="stats-count counter" data-count="125"> 0 </div>
+                            <h5>Awards Received</h5>
+                        </div>
+                        <div class="col l-3 stats-col">
+                            <div class="stats-count counter" data-count="1505"> 0 </div>
+                            <h5>Cups of Coffee</h5>
+                        </div>
+                        <div class="col l-3 stats-col">
+                            <div class="stats-count counter" data-count="110"> 0 </div>
+                            <h5>Projects Completed</h5>
+                        </div>
+                        <div class="col l-3 stats-col ">
+                            <div class="stats-count counter" data-count="102"> 0 </div>
+                            <h5>Happy Clients</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="wide heading-primary heading-secondary" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-delay="50">
+                    <h3 class="heading-primary__sub">WHAT WE DO</h3>
+                    <h2 class="heading-primary__main">
+                        We’ve got everything you need to launch and grow your business
+                    </h2>
+                </div>
+
+                <div class="u-line">
+                </div>
+
+                <div class="wide services-list">
+                    <div class="row">
+                        <div class="col l-6 services-list-item" data-aos="fade-up" data-aos-once="true"
+                            data-aos-duration="2000" data-aos-delay="50">
+                            <div class="services-list-item__icon"><i class="fas fa-brush"></i></div>
+                            <div class="services-list-item__text">
+                                <h3>Brand Identity</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque
+                                    veritatis.
+                                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-6 services-list-item" data-aos="fade-up" data-aos-once="true"
+                            data-aos-duration="2000" data-aos-delay="50">
+                            <div class="services-list-item__icon"><i class="fas fa-vector-square"></i></div>
+                            <div class="services-list-item__text">
+                                <h3>Illustration</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque
+                                    veritatis.
+                                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-6 services-list-item" data-aos="fade-up" data-aos-once="true"
+                            data-aos-duration="2000" data-aos-delay="50">
+                            <div class="services-list-item__icon"><i class="fas fa-bullhorn"></i></div>
+                            <div class="services-list-item__text">
+                                <h3>Marketing</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque
+                                    veritatis.
+                                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-6 services-list-item" data-aos="fade-up" data-aos-once="true"
+                            data-aos-duration="2000" data-aos-delay="50">
+                            <div class="services-list-item__icon"><i class="fas fa-globe-americas"></i></div>
+                            <div class="services-list-item__text">
+                                <h3>Web Design</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque
+                                    veritatis.
+                                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-6 services-list-item" data-aos="fade-up" data-aos-once="true"
+                            data-aos-duration="2000" data-aos-delay="50">
+                            <div class="services-list-item__icon"><i class="fas fa-cube"></i></div>
+                            <div class="services-list-item__text">
+                                <h3>Packaging Design</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque
+                                    veritatis.
+                                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col l-6 services-list-item" data-aos="fade-up" data-aos-once="true"
+                            data-aos-duration="2000" data-aos-delay="50">
+                            <div class="services-list-item__icon"><i class="fab fa-chrome"></i></div>
+                            <div class="services-list-item__text">
+                                <h3>Web Development</h3>
+                                <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
+                                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque
+                                    veritatis.
+                                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work">
+                <div class="heading-wrap">
+                    <div class="wide heading-primary heading-secondary" data-aos="fade-up" data-aos-once="true"
+                        data-aos-duration="2000" data-aos-delay="50">
+                        <h3 class="heading-primary__sub">RECENT WORKS</h3>
+                        <h2 class="heading-primary__main">
+                            We love what we do, check out some of our latest works
+                        </h2>
+                    </div>
+
+                    <div class="u-line">
+                    </div>
+                </div>
+
+                <div class="wide work-content">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="masonry">
+                                <div class="masonry-brick" data-aos="fade-up" data-aos-once="true"
+                                    data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="masonry-brick__image">
+                                        <a href="./assets/image/gallery_masonry/g-shutterbug.jpg" class="thumb-link"
+                                            title="Shutterbug" data-size="1050x700">
+                                            <img src="./assets/image/gallery_masonry/xlady-shutterbug,402x.jpg.pagespeed.ic.2Gd7FzOYRa.webp"
+                                                srcset="./assets/image/gallery_masonry/xlady-shutterbug,402x.jpg.pagespeed.ic.2Gd7FzOYRa.webp 1x,
+                                             ./assets/image/gallery_masonry/xlady-shutterbug,402x.jpg.pagespeed.ic.2Gd7FzOYRa.webp 2x"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="masonry-brick__text">
+                                        <h3 class="masonry-brick__title">Shutterbug</h3>
+                                        <p class="masonry-brick__category">Branding</p>
+                                    </div>
+                                    <a href="#0" class="masonry-brick__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <div class="masonry-brick__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                            quo.Unde dolorem corrupti neque nisi.</p>
+                                    </div>
+                                </div>
+                                <div class="masonry-brick masonry-brick--height2" data-aos="fade-up"
+                                    data-aos-once="true" data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="masonry-brick__image">
+                                        <a href="./assets/image/gallery_masonry/g-woodcraft.jpg" class="thumb-link"
+                                            title="Shutterbug" data-size="1050x700">
+                                            <img src="./assets/image/gallery_masonry/woodcraft,402x.jpg.pagespeed.ce.t3I712TLap.jpg"
+                                                srcset="./assets/image/gallery_masonry/woodcraft,402x.jpg.pagespeed.ce.t3I712TLap.jpg 1x,
+                                                ./assets/image/gallery_masonry/woodcraft,402x.jpg.pagespeed.ce.t3I712TLap.jpg 2x"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="masonry-brick__text">
+                                        <h3 class="masonry-brick__title">Woodcraft</h3>
+                                        <p class="masonry-brick__category">Web Design</p>
+                                    </div>
+                                    <a href="#0" class="masonry-brick__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <div class="masonry-brick__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                            quo.Unde dolorem corrupti neque nisi.</p>
+                                    </div>
+                                </div>
+                                <div class="masonry-brick " data-aos="fade-up" data-aos-once="true"
+                                    data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="masonry-brick__image">
+                                        <a href="./assets/image/gallery_masonry/g-beetle.jpg" class="thumb-link"
+                                            title="Shutterbug" data-size="1050x700">
+                                            <img src="./assets/image/gallery_masonry/the-beetle,402x.jpg.pagespeed.ce.43_X8SK83V.jpg"
+                                                srcset="./assets/image/gallery_masonry/the-beetle,402x.jpg.pagespeed.ce.43_X8SK83V.jpg 1x,
+                                                ./assets/image/gallery_masonry/the-beetle,402x.jpg.pagespeed.ce.43_X8SK83V.jpg 2x"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="masonry-brick__text">
+                                        <h3 class="masonry-brick__title">The Beetle</h3>
+                                        <p class="masonry-brick__category">Web Development</p>
+                                    </div>
+                                    <a href="#0" class="masonry-brick__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <div class="masonry-brick__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                            quo.Unde dolorem corrupti neque nisi.</p>
+                                    </div>
+                                </div>
+                                <div class="masonry-brick " data-aos="fade-up" data-aos-once="true"
+                                    data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="masonry-brick__image">
+                                        <a href="./assets/image/gallery_masonry/g-grow-green.jpg" class="thumb-link"
+                                            title="Shutterbug" data-size="1050x700">
+                                            <img src="./assets/image/gallery_masonry/grow-green,402x.jpg.pagespeed.ce.FnDIb6x1r2.jpg"
+                                                srcset="./assets/image/gallery_masonry/grow-green,402x.jpg.pagespeed.ce.FnDIb6x1r2.jpg 1x,
+                                                ./assets/image/gallery_masonry/grow-green,402x.jpg.pagespeed.ce.FnDIb6x1r2.jpg 2x"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="masonry-brick__text">
+                                        <h3 class="masonry-brick__title">Grow green</h3>
+                                        <p class="masonry-brick__category">Branding</p>
+                                    </div>
+                                    <a href="#0" class="masonry-brick__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <div class="masonry-brick__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                            quo.Unde dolorem corrupti neque nisi.</p>
+                                    </div>
+                                </div>
+                                <div class="masonry-brick masonry-brick--height2" data-aos="fade-up"
+                                    data-aos-once="true" data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="masonry-brick__image">
+                                        <a href="./assets/image/gallery_masonry/g-guitarist.jpg" class="thumb-link"
+                                            title="Shutterbug" data-size="1050x700">
+                                            <img src="./assets/image/gallery_masonry/guitarist,402x.jpg.pagespeed.ce.VAV1AYHB_w.jpg"
+                                                srcset="./assets/image/gallery_masonry/guitarist,402x.jpg.pagespeed.ce.VAV1AYHB_w.jpg 1x,
+                                                ./assets/image/gallery_masonry/guitarist,402x.jpg.pagespeed.ce.VAV1AYHB_w.jpg 2x"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="masonry-brick__text">
+                                        <h3 class="masonry-brick__title">Guitarist</h3>
+                                        <p class="masonry-brick__category">Web Design</p>
+                                    </div>
+                                    <a href="#0" class="masonry-brick__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <div class="masonry-brick__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                            quo.Unde dolorem corrupti neque nisi.</p>
+                                    </div>
+                                </div>
+                                <div class="masonry-brick " data-aos="fade-up" data-aos-once="true"
+                                    data-aos-duration="2000" data-aos-delay="50">
+                                    <div class="masonry-brick__image">
+                                        <a href="./assets/image/gallery_masonry/g-palmeira.jpg" class="thumb-link"
+                                            title="Shutterbug" data-size="1050x700">
+                                            <img src="./assets/image/gallery_masonry/palmeira,402x.jpg.pagespeed.ce.2KJqfFDlId.jpg"
+                                                srcset="./assets/image/gallery_masonry/palmeira,402x.jpg.pagespeed.ce.2KJqfFDlId.jpg 1x,
+                                                ./assets/image/gallery_masonry/palmeira,402x.jpg.pagespeed.ce.2KJqfFDlId.jpg 2x"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="masonry-brick__text">
+                                        <h3 class="masonry-brick__title">Panmeira</h3>
+                                        <p class="masonry-brick__category">Web Design</p>
+                                    </div>
+                                    <a href="#0" class="masonry-brick__link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                    <div class="masonry-brick__caption">
+                                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto
+                                            quo.Unde dolorem corrupti neque nisi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="client">
+                <div class="wide heading-primary heading-secondary" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-delay="50">
+                    <h3 class="heading-primary__sub">OUR CLIENTS</h3>
+                    <h2 class="heading-primary__main">
+                        Glint has been honored to partner up with these clients
+                    </h2>
+                </div>
+
+                <div class="wide client-wrap" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                    data-aos-delay="50">
+                    <div class="row">
+                        <div class="col l-12">
+                            <div class="slick">
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xjoomla.png.pagespeed.ic.FpAVRF996j.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xmagento.png.pagespeed.ic.dhkdk5A1Gu.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xapple.png.pagespeed.ic.LRyKIqS94g.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xatom.png.pagespeed.ic.dwjCwOpoMB.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xblackberry.png.pagespeed.ic.4YUA8e33nk.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xdropbox.png.pagespeed.ic.aYYvBaVnd-.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xjoomla.png.pagespeed.ic.FpAVRF996j.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xmagento.png.pagespeed.ic.dhkdk5A1Gu.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xapple.png.pagespeed.ic.LRyKIqS94g.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xatom.png.pagespeed.ic.dwjCwOpoMB.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xblackberry.png.pagespeed.ic.4YUA8e33nk.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xdropbox.png.pagespeed.ic.aYYvBaVnd-.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xjoomla.png.pagespeed.ic.FpAVRF996j.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xmagento.png.pagespeed.ic.dhkdk5A1Gu.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xapple.png.pagespeed.ic.LRyKIqS94g.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xatom.png.pagespeed.ic.dwjCwOpoMB.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xblackberry.png.pagespeed.ic.4YUA8e33nk.webp">
+                                </a>
+                                <a href="#0" title="" class="slick__slide">
+                                    <img src="./assets/image/slider/xdropbox.png.pagespeed.ic.aYYvBaVnd-.webp">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="u-line"></div>
+
+                <div class="wide client-testimonials" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000"
+                    data-aos-delay="50">
+                    <div class="row">
+                        <div class="col l-12">
+                            <div class="testimonials">
+                                <div class="testimonials__slide">
+                                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat
+                                        voluptas animi adipisci.
+                                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui
+                                        ipsam temporibus quisquam vel.
+                                    </p>
+                                    <img src="./assets/image/testimonial/xuser-01.jpg.pagespeed.ic.6i12ClXOQG.webp"
+                                        class="tesimonials__avatar">
+                                    <div class="testimonials__info">
+                                        <span class="testimonials__name">Tim Cook</span>
+                                        <span class="testimonials__pos">CEO, Apple</span>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide">
+                                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat
+                                        voluptas animi adipisci.
+                                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui
+                                        ipsam temporibus quisquam vel.
+                                    </p>
+                                    <img src="./assets/image/testimonial/xuser-05.jpg.pagespeed.ic.APnAqT_Vqk.webp"
+                                        class="tesimonials__avatar">
+                                    <div class="testimonials__info">
+                                        <span class="testimonials__name">Sundar Pichai</span>
+                                        <span class="testimonials__pos">CEO, Google</span>
+                                    </div>
+                                </div>
+                                <div class="testimonials__slide">
+                                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat
+                                        voluptas animi adipisci.
+                                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui
+                                        ipsam temporibus quisquam vel.
+                                    </p>
+                                    <img src="./assets/image/testimonial/xuser-02.jpg.pagespeed.ic.T71c7D0WMQ.webp"
+                                        class="tesimonials__avatar">
+                                    <div class="testimonials__info">
+                                        <span class="testimonials__name">Satya Nadella</span>
+                                        <span class="testimonials__pos">CEO, Microsoft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="u-line--vertical"></div>
+            </section>
+
+            <section class="contact">
+                <div class="u-line--vertical"></div>
+
+                <div class="wide heading-primary heading-secondary" data-aos="fade-up" data-aos-once="true"
+                    data-aos-duration="2000" data-aos-delay="50">
+                    <h3 class="heading-primary__sub">CONTACT US</h3>
+                    <h2 class="heading-primary__main">
+                        Reach out for a new project or just say hello
+                    </h2>
+                </div>
+                
+                <div class="wide contact-content">
+                    <div class="row">
+                        <div class="col l-8">
+                            <div class="contact-form">
+                                <h3 class="contact-form__title">Send Us A Message</h3>
+                                <form name="contactForm" id="contactForm" method="post" action=""
+                                    novalidate="novalidate">
+                                    <fieldset>
+                                        <div class="form-field">
+                                            <input name="contactName" type="text" id="contactName"
+                                                placeholder="Your Name" value="" minlength="2" required/>
+                                        </div>
+                                        <div class="form-field">
+                                            <input name="contactEmail" type="email" id="contactEmail"
+                                                placeholder="Your Email" value="" required/>
+                                        </div>
+                                        <div class="form-field">
+                                            <input name="contactSubject" type="text" id="contactSubject"
+                                                placeholder="Subject" value=""/>
+                                        </div>
+                                        <div class="form-field">
+                                            <textarea name="contactMessage" id="contactMessage"
+                                                placeholder="Your Message" rows="10" cols="50" required></textarea>
+                                        </div>
+                                        <div class="form-field">
+                                            <button type="submit" class="btn--green">Submit</button>
+            
+                                            <div class="submit-loader">
+                                                <div class="text-loader">Sending...</div>
+                                                <div class="s-loader">
+                                                    <div class="bounce1"></div>
+                                                    <div class="bounce2"></div>
+                                                    <div class="bounce3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <!-- contact-warning -->
+                                <div class="message-warning">
+                                    Something went wrong. Please try again.
+                                </div>
+                                <!-- contact-success -->
+                                <div class="message-success">
+                                    Your message was sent, thank you!<br>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="contact-info">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overlay"></div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+        </footer>
+
+    </section>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- PhotoSwipe-->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./node_modules/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="./node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+    <!-- Masonry layout-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script>
+        var elem = document.querySelector('.masonry');
+        var msnry = new Masonry(elem, {
+            // options
+            itemSelector: '.masonry-brick',
+            resize: true,
+        });
+    </script>
+
+  
+    <!-- slick-->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- JS-->
+    <script type="text/javascript" src="./assets/js/plugin.js"></script>
+    <script type="text/javascript" src="./assets/js/counterUp.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    
+
+</body>
+
+</html>

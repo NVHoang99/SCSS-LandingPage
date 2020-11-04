@@ -1,0 +1,16 @@
+@mixin heading-text-color($color-h3: $color-white, $color-h2: $color-white) {
+    h3 {
+        color: $color-h3;
+    }
+    h2 {
+        color: $color-h2;
+    }
+}
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
