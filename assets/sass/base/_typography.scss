@@ -95,4 +95,46 @@ body {
         margin-bottom: 5rem;
         @include heading-text-color($text-social, $color-white);
     }
+    &-title {
+        margin-bottom: 6rem;
+        font-size: 2rem;
+        line-height: 1.385;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        background: #4568dc; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+            to right,
+            #b06ab3,
+            #4568dc
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+            to right,
+            #b06ab3,
+            #4568dc
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &-info {
+        .info {
+            margin-bottom: 4.8rem;
+            h5 {
+                font-size: 1.6rem;
+                line-height: 3rem;
+                padding-top: 1.5rem;
+                color: $text-social;
+                letter-spacing: .7px;
+                word-spacing: 2px;
+                margin-bottom: 1.5rem;
+            }       
+        }
+    }
+}
+
+.para {
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    line-height: 1.765;
+    color: $text-service;
 }

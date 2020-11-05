@@ -1,0 +1,116 @@
+.footer {
+    padding: 9rem 0 6rem;
+    font-family: "montserrat-light", sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.3);
+    background: $color-black-light;
+    &-main {
+        text-align: left;
+        &__desc {
+            padding: 0 5rem;
+        }
+
+        &__logo {
+            display: block;
+            outline: 0;
+            border: none;
+            width: 8.5rem;
+            height: 3rem;
+            margin-bottom: 3rem;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__sub {
+            padding: 0 5rem;
+            h4 {
+                color: $color-white;
+                font-size: 1.8rem;
+                line-height: 1.3;
+                margin-bottom: 3.6rem;
+                letter-spacing: 0.15rem;
+                word-spacing: 0.3rem;
+                font-weight: 550;
+            }
+            p {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &__subForm {
+            position: relative;
+            #mc-form {
+                width: 100%;
+                input[type="email"] {
+                    width: 100%;
+                    height: 5.4rem;
+                    padding-left: 7rem;
+                    background: url("https://www.flaticon.com/svg/static/icons/svg/561/561127.svg")
+                            20px center no-repeat,
+                        rgba($color-white, 0.7);
+                    background-size: 30px 25px, auto;
+
+                    border: none;
+                    margin-bottom: 1.8rem;
+                    color: $color-black;
+                    outline: none;
+                    display: block;
+                }
+
+                button {
+                    @extend %btn;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: $color-white;
+                    background: $text-social;
+                    border: none;
+                    font-size: 1.3rem;
+                    font-weight: 550;
+                    letter-spacing: 0.25rem;
+                }
+            }
+        }
+    }
+    &-bottom {
+        margin-top: 5.4rem;
+        text-align: center;
+        font-size: 14px;
+        .copyright span:first-child {
+            &::after {
+                content: "|";
+                display: inline-block;
+                padding: 0 1rem 0 1.2rem;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        .go-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 600;
+            a,
+            a:link,
+            a:visited {
+                text-decoration: none;
+                border: 0 none;
+                display: block;
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+                text-align: center;
+                background: $color-black;
+                color: rgba(255, 255, 255, 0.5);
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+                i {
+                    color: $color-white;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}

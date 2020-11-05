@@ -221,61 +221,55 @@
 
         .contact-form {
             margin-bottom: 3rem;
-            &__title {
-                margin-bottom: 6rem;
-                color: $color-white;
-                font-size: 1.3rem;
-                line-height: 1.385;
-                text-transform: uppercase;
-                letter-spacing: 0.16rem;
-            }
             form {
                 fieldset {
                     border: none;
                     padding: 0;
                     margin: 0;
-                    input[type="email"],
-                    input[type="number"],
-                    input[type="search"],
-                    input[type="text"],
-                    input[type="tel"],
-                    input[type="url"],
-                    input[type="password"],
-                    textarea,
-                    select {
-                        display: block;
-                        height: 6rem;
-                        padding: 1.5rem 0;
-                        margin-bottom: 0.9rem;
-                        border: 0;
-                        outline: none;
-                        color: $color-white;
-                        font-size: 1.4rem;
-                        line-height: 3rem;
-                        width: 100%;
-                        background: transparent;
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-                        -webkit-transition: all 0.3s ease-in-out;
-                        transition: all 0.3s ease-in-out;
-                    }
-                    textarea {
-                        min-height: 25rem;
-                        resize: vertical;
-                    }
-                    input[type="email"]:focus,
-                    input[type="number"]:focus,
-                    input[type="search"]:focus,
-                    input[type="text"]:focus,
-                    input[type="tel"]:focus,
-                    input[type="url"]:focus,
-                    input[type="password"]:focus,
-                    textarea:focus,
-                    select:focus {
-                        color: $color-white;
-                        border-bottom: 1px solid $color-green;
-                    }
+            
                     .form-field {
                         position: relative;
+                        input[type="email"],
+                        input[type="number"],
+                        input[type="search"],
+                        input[type="text"],
+                        input[type="tel"],
+                        input[type="url"],
+                        input[type="password"],
+                        textarea,
+                        select {
+                            display: block;
+                            height: 6rem;
+                            padding: 1.5rem 0;
+                            margin-bottom: 0.9rem;
+                            border: 0;
+                            outline: none;
+                            color: $color-white;
+                            font-size: 1.4rem;
+                            line-height: 3rem;
+                            width: 100%;
+                            background: transparent;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                            -webkit-transition: all 0.3s ease-in-out;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        textarea {
+                            min-height: 25rem;
+                            resize: vertical;
+                        }
+                        input[type="email"]:focus,
+                        input[type="number"]:focus,
+                        input[type="search"]:focus,
+                        input[type="text"]:focus,
+                        input[type="tel"]:focus,
+                        input[type="url"]:focus,
+                        input[type="password"]:focus,
+                        textarea:focus,
+                        select:focus {
+                            color: $color-white;
+                            border-bottom: 1px solid $color-green;
+                        }
+
                         label {
                             font-size: 1rem;
                             font-weight: 600;
@@ -300,8 +294,80 @@
                                 border-right: 5px solid #39b54a;
                             }
                         }
+
+                        button {
+                            @extend %btn;
+                            border: none;
+                        }
+
+                        .submit-loader {
+                            display: none;
+                            position: relative;
+                            left: 0;
+                            top: 1.8rem;
+                            width: 100%;
+                            text-align: center;
+                            margin-bottom: 3rem;
+                            .text-loader {
+                                display: none;
+                            }
+                            .s-loader > div {
+                                width: 9px;
+                                height: 9px;
+                                background-color: #FFFFFF;
+                                border-radius: 100%;
+                                display: inline-block;
+                                margin-right: .9rem;
+                                -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
+                                animation: bouncedelay 1.4s infinite ease-in-out both;
+                            }
+                            .s-loader {
+                                margin: 1.2rem auto 3rem;
+                                width: 70px;
+                                text-align: center;
+                                -webkit-transform: translateX(0.45rem);
+                                -ms-transform: translateX(0.45rem);
+                                transform: translateX(0.45rem);
+                                .bounce1 {
+                                    -webkit-animation-delay: -0.32s;
+                                    animation-delay: -0.32s;
+                                }
+                                .bounce2 {
+                                    -webkit-animation-delay: -0.16s;
+                                    animation-delay: -0.16s;
+                                }
+                            }    
+                        }
                     }
                 }
+            }
+        }
+
+        .message-warning {
+            color: #ff6163;
+        }
+        .message-success {
+            color: #39b54a;
+        }
+        .message-warning,
+        .message-success {
+            display: none;
+            background: #111111;
+            font-size: 1.5rem;
+            line-height: 2;
+            padding: 3rem;
+            margin-bottom: 3.6rem;
+            width: 100%;
+        }
+    }
+
+    &-info {
+        
+        .contact-social {
+            list-style: none;
+            li {
+                display: inline-block;
+                padding-right: .7rem;
             }
         }
     }

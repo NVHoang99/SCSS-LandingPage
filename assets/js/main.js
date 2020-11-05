@@ -77,7 +77,7 @@
         });
     };
 
-    var clSmoothScroll = (function () {
+    var clSmoothScroll = function () {
         var $root = $("html, body");
 
         $('a[href^="#"]').click(function () {
@@ -88,7 +88,24 @@
                 1000
             );
         });
-    });
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            //Get the button:
+            mybutton = document.getElementById("go-top");
+            mybtn = document.getElementById("back-to-top");
+            if (
+                document.body.scrollTop > 500 ||
+                document.documentElement.scrollTop > 500
+            ) {
+                mybutton.style.display = "block";
+                mybtn.style.opacity = 1;
+            } else {
+                //mybutton.style.display = "none";
+                mybtn.style.opacity = 0;
+            }
+        };
+    };
 
     var clContactForm = function () {
         $("#contactForm").validate({

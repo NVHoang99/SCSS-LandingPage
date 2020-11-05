@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="top">
     <section class="app">
         <!-- HEADER-->
         <header class="header">
@@ -542,26 +542,26 @@
                         Reach out for a new project or just say hello
                     </h2>
                 </div>
-                
+
                 <div class="wide contact-content">
                     <div class="row">
                         <div class="col l-8">
                             <div class="contact-form">
-                                <h3 class="contact-form__title">Send Us A Message</h3>
+                                <h3 class="contact-title">Send Us A Message</h3>
                                 <form name="contactForm" id="contactForm" method="post" action=""
                                     novalidate="novalidate">
                                     <fieldset>
                                         <div class="form-field">
                                             <input name="contactName" type="text" id="contactName"
-                                                placeholder="Your Name" value="" minlength="2" required/>
+                                                placeholder="Your Name" value="" minlength="2" required />
                                         </div>
                                         <div class="form-field">
                                             <input name="contactEmail" type="email" id="contactEmail"
-                                                placeholder="Your Email" value="" required/>
+                                                placeholder="Your Email" value="" required />
                                         </div>
                                         <div class="form-field">
                                             <input name="contactSubject" type="text" id="contactSubject"
-                                                placeholder="Subject" value=""/>
+                                                placeholder="Subject" value="" />
                                         </div>
                                         <div class="form-field">
                                             <textarea name="contactMessage" id="contactMessage"
@@ -569,7 +569,7 @@
                                         </div>
                                         <div class="form-field">
                                             <button type="submit" class="btn--green">Submit</button>
-            
+
                                             <div class="submit-loader">
                                                 <div class="text-loader">Sending...</div>
                                                 <div class="s-loader">
@@ -594,7 +594,68 @@
                         </div>
                         <div class="col l-4">
                             <div class="contact-info">
+                                <div class="info-wrap">
+                                    <h3 class="contact-title">Contact Info</h3>
+                                    <div class="info">
+                                        <h5>Where to Find Us</h5>
+                                        <p> 1600 Amphitheatre Parkway</p>
+                                        <p>Mountain View, CA</span>
+                                        <p> 94043 US</p>
 
+                                    </div>
+                                    <div class="info">
+                                        <h5>Email Us At</h5>
+                                        <p>
+                                            contact@glintsite.com
+                                        </p>
+                                        <p>
+                                            info@glintsite.com
+                                        </p>
+                                    </div>
+                                    <div class="info">
+                                        <h5>Call Us At</h5>
+                                        <p>Phone: (+63) 555 1212</p>
+                                        <p>
+                                            Fax: (+63) 555 0101
+                                        </p>
+                                        <p>
+                                            Mobile: (+63) 555 0100
+                                        </p>
+                                    </div>
+                                    <ul class="contact-social">
+                                        <li>
+                                            <a href="#0" class="contact-link">
+
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="contact-link">
+
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="contact-link">
+
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="contact-link">
+
+                                                <i class="fab fa-behance" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="contact-link">
+
+                                                <i class="fab fa-dribbble" aria-hidden="true"></i>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -606,7 +667,46 @@
 
         <!-- FOOTER -->
         <footer class="footer">
-
+            <div class="wide">
+                <div class="row footer-main">
+                    <div class="col l-6 footer-main__desc">
+                        <div class="footer-main__logo">
+                            <img src="assets/image/logo-footer.png">
+                        </div>
+                        <div class="para">
+                            Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent
+                            sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget
+                            tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan
+                            tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+                        </div>
+                    </div>
+                    <div class="col l-6 footer-main__sub">
+                        <h4>Get Notified</h4>
+                        <p class="para">Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut
+                            itaque enim optio ut excepturi deserunt iusto porro.</p>
+                        <div class="footer-main__subForm">
+                            <form id="mc-form" class="group" novalidate="true">
+                                <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                                <button type="submit" name="subscribe">Subscribe</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-bottom">
+                    <div class="col l-12">
+                        <div class="copyright">
+                            <span>© Copyright Glint 2017</span>
+                            <span>Site Template by <a href="#0">Colorlib</a></span>
+                        </div>
+                        <div class="go-top" id="go-top">
+                            <a id="back-to-top" title="Back to Top" href="#top">
+                                <i class="fas fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </footer>
 
     </section>
@@ -697,17 +797,18 @@
         });
     </script>
 
-  
+
     <!-- slick-->
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- JS-->
     <script type="text/javascript" src="./assets/js/plugin.js"></script>
     <script type="text/javascript" src="./assets/js/counterUp.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    
+
 
 </body>
 
