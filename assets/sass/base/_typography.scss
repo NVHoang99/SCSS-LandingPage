@@ -4,9 +4,10 @@ body {
 }
 
 .heading-primary {
+    position: relative;
+    z-index: 10;
     padding-top: 15rem;
     max-width: 1000px !important;
-    z-index: 10;
     @include heading-text-color($text-social);
     &__sub {
         text-transform: uppercase;

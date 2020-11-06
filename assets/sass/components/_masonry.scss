@@ -20,6 +20,7 @@
 
 .masonry {
     position: relative;
+    z-index: 10;
     &-brick {
         position: absolute;
         overflow: hidden;

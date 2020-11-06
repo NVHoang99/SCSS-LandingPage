@@ -141,10 +141,17 @@
             },
         });
     };
+
+    var clNavigation = function (){
+        $(".navigation__link").click(function(){
+            document.getElementById("nav-toggle").checked = false;
+        });
+    };
     (function ssInit() {
         clPhotoswipe();
         clSlickSlider();
         clSmoothScroll();
         clContactForm();
+        clNavigation();
     })();
 })(jQuery);

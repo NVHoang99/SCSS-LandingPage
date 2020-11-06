@@ -13,6 +13,7 @@
 
 .u-line--vertical {
     position: absolute;
+    z-index: 10;
     display: block;
     width: 2px;
     height: 9.5rem;
@@ -23,5 +24,4 @@
     opacity: 0.6;
     background-color: $color-black;
     @include overlay;
-    z-index: -1;
 }

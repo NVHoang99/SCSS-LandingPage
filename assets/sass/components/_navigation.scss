@@ -1,0 +1,135 @@
+.navigation {
+    position: relative;
+    z-index: 2000;
+    &__checkbox {
+        display: none;
+    }
+    &__button {
+        background-color: $color-white;
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        border-radius: 50%;
+        z-index: 1500;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 1rem 3rem rgba($color-black, 0.15);
+    }
+    &__background {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 3.5rem;
+        right: 3.5rem;
+        background-color: $color-black-2;
+        background-image: url("../image/contact-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center, center;
+        z-index: 1000;
+        transition: transform 0.8s;
+        opacity: 0.98;
+    }
+    &__checkbox:checked ~ &__background {
+        transform: scale(100);
+    }
+    &__checkbox:checked ~ &__wraplist {
+        opacity: 1;
+        width: 100%;
+        visibility: visible;
+    }
+
+    &__wraplist {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1200;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        transition: all .8s;
+    }
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+    &__item {
+        margin: 1rem;
+    }
+    &__link {
+        &:link,
+        &:visited {
+            font-family: "lora", sans-serif;
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: #4568dc; /* fallback for old browsers */
+            background: -webkit-linear-gradient(
+                to right,
+                #b06ab3,
+                #4568dc
+            ); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(
+                to right,
+                #b06ab3,
+                #4568dc
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__icon {
+        position: relative;
+        margin-top: calc(2rem - 0.13rem);
+
+        &,
+        &::before,
+        &::after {
+            width: 2.3rem;
+            height: 0.26rem;
+            background-color: rgba($color-black, 0.8);
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.3s;
+        }
+
+        &::before {
+            top: -0.6rem;
+        }
+
+        &::after {
+            top: 0.6rem;
+        }
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

@@ -11,6 +11,24 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -22,9 +40,10 @@ body {
 }
 
 .heading-primary {
+  position: relative;
+  z-index: 10;
   padding-top: 15rem;
   max-width: 1000px !important;
-  z-index: 10;
 }
 
 .heading-primary h3 {
@@ -244,6 +263,7 @@ body {
 
 .u-line--vertical {
   position: absolute;
+  z-index: 10;
   display: block;
   width: 2px;
   height: 9.5rem;
@@ -256,9 +276,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 .btn:hover, .btn:active {
@@ -296,9 +315,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 0;
   min-height: 780px;
+  position: relative;
 }
 
 .header-logo {
@@ -328,6 +346,8 @@ body {
           animation-name: fadeIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+  position: relative;
+  z-index: 10;
 }
 
 .header-main__button {
@@ -404,6 +424,7 @@ body {
   position: absolute;
   right: 9.5rem;
   bottom: 8rem;
+  z-index: 10;
 }
 
 .header-scroll a {
@@ -469,6 +490,7 @@ body {
 
 .services {
   padding-bottom: 5rem;
+  position: relative;
 }
 
 .services-list-item {
@@ -497,6 +519,7 @@ body {
 .work .heading-wrap {
   background-color: #111111;
   padding-bottom: 30rem;
+  position: relative;
 }
 
 .work .u-line::before {
@@ -507,6 +530,7 @@ body {
   background-color: #E6E6E6;
   margin-top: 15rem;
   position: relative;
+  z-index: 10;
 }
 
 .client-wrap {
@@ -625,7 +649,6 @@ body {
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
-  z-index: 2;
 }
 
 .client-testimonials .testimonials .slick-prev {
@@ -654,7 +677,6 @@ body {
   padding-bottom: 12rem;
   color: #ffffff;
   position: relative;
-  z-index: 0;
 }
 
 .contact-content {
@@ -665,6 +687,7 @@ body {
   padding-bottom: 6rem;
   font-size: 1.5rem;
   line-height: 2;
+  position: relative;
 }
 
 .contact-content .contact-form,
@@ -867,6 +890,7 @@ body {
 
 .masonry {
   position: relative;
+  z-index: 10;
 }
 
 .masonry-brick {
@@ -1049,6 +1073,7 @@ a.contact-link i {
   line-height: 2;
   color: rgba(255, 255, 255, 0.3);
   background: #111111;
+  position: relative;
 }
 
 .footer-main {
@@ -1141,7 +1166,6 @@ a.contact-link i {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  z-index: 600;
 }
 
 .footer-bottom .go-top a,
@@ -1165,5 +1189,148 @@ a.contact-link i {
 .footer-bottom .go-top a:visited i {
   color: #ffffff;
   font-size: 1.8rem;
+}
+
+.navigation {
+  position: relative;
+  z-index: 2000;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #ffffff;
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  border-radius: 50%;
+  z-index: 1500;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.navigation__background {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 3.5rem;
+  right: 3.5rem;
+  background-color: #151515;
+  background-image: url("../image/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  z-index: 1000;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  opacity: 0.98;
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(100);
+          transform: scale(100);
+}
+
+.navigation__checkbox:checked ~ .navigation__wraplist {
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+
+.navigation__wraplist {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link, .navigation__link:visited {
+  font-family: "lora", sans-serif;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #4568dc;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#b06ab3), to(#4568dc));
+  background: linear-gradient(to right, #b06ab3, #4568dc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: calc(2rem - 0.13rem);
+}
+
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  width: 2.3rem;
+  height: 0.26rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+}
+
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navigation__icon::before {
+  top: -0.6rem;
+}
+
+.navigation__icon::after {
+  top: 0.6rem;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 /*# sourceMappingURL=main.css.map */
