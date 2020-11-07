@@ -8,6 +8,7 @@
 }
 
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
 }
 
@@ -292,8 +293,8 @@ body {
   0% {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate(0, 100%);
-    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 80%);
+    transform: translate(0, 80%);
   }
   100% {
     opacity: 1;
@@ -307,8 +308,8 @@ body {
   0% {
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate(0, 100%);
-    transform: translate(0, 100%);
+    -webkit-transform: translate(0, 80%);
+    transform: translate(0, 80%);
   }
   100% {
     opacity: 1;
@@ -412,7 +413,6 @@ body {
   background-repeat: no-repeat;
   min-height: 780px;
   position: relative;
-  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -450,15 +450,25 @@ body {
 }
 
 .header-main {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation: fadeIn 2s ease-in-out;
+          animation: fadeIn 2s ease-in-out;
   position: relative;
   z-index: 10;
   top: 50%;
-  -webkit-transform: translateY(-25vh);
-          transform: translateY(-25vh);
+}
+
+@media (max-width: 1200px) {
+  .header-main {
+    -webkit-transform: translateY(-25vh);
+            transform: translateY(-25vh);
+  }
+}
+
+@media (max-width: 900px) {
+  .header-main {
+    -webkit-transform: translateY(-25vh);
+            transform: translateY(-25vh);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1572,9 +1582,6 @@ a.contact-link i {
   top: 3.5rem;
   right: 3.5rem;
   background-color: #151515;
-  background-image: url("../image/contact-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center, center;
   z-index: 1000;
   -webkit-transition: -webkit-transform 0.8s;
   transition: -webkit-transform 0.8s;

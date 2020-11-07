@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     min-height: 780px;
     position: relative;
-    overflow: hidden;
     @include respond(tab-land){
         height: 100vh;
     }
@@ -35,12 +34,16 @@
     }
 
     &-main {
-        animation-name: fadeIn;
-        animation-duration: 2s;
+        animation: fadeIn 2s ease-in-out;
         position: relative;
         z-index: 10;
         top: 50%;
-        transform: translateY(-25vh);
+        @include respond(tab-land) {
+            transform: translateY(-25vh);
+        }
+        @include respond(tab-port) {
+            transform: translateY(-25vh);
+        }
         @include respond(small-phone) {
             width: 85%;
             margin-left: 7.5%;
