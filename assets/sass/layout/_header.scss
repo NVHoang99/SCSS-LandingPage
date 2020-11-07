@@ -6,6 +6,14 @@
     background-repeat: no-repeat;
     min-height: 780px;
     position: relative;
+    overflow: hidden;
+    @include respond(tab-land){
+        height: 100vh;
+    }
+    @include respond(phone){
+        height: 100vh;
+    }
+
     &-logo {
         height: 9.6rem;
         position: relative;
@@ -31,12 +39,41 @@
         animation-duration: 2s;
         position: relative;
         z-index: 10;
+        top: 50%;
+        transform: translateY(-25vh);
+        @include respond(small-phone) {
+            width: 85%;
+            margin-left: 7.5%;
+            text-align: center;
+        }
         &__button {
             padding-top: 6rem;
             max-width: 100rem !important;
 
             a:not(:last-child) {
                 margin-right: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            @include respond(tab-land){
+                padding-top: 4rem;
+                max-width: 700px !important;
+            }
+            @include respond(tab-port){
+                padding-top: 4rem;
+                max-width: 550px !important;
+            }
+            @include respond(phone){
+                padding-top: 4rem;
+                max-width: 420px !important;
+                a.btn {
+                    display: block;
+                    width: 250px;
+                }
+            }
+            @include respond(small-phone) {
+                width: 75%;
+                margin-left: 12.5%;
             }
         }
 
@@ -45,6 +82,9 @@
             top: 50%;
             right: 5rem;
             transform: translateY(-50%);
+            @include respond(small-phone){
+                display: none;
+            }
             ul li {
                 list-style: none;
                 padding: 2.5rem 0;

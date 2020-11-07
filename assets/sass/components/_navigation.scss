@@ -1,6 +1,7 @@
 .navigation {
     position: relative;
     z-index: 2000;
+    width: 100%;
     &__checkbox {
         display: none;
     }
@@ -33,7 +34,7 @@
         opacity: 0.98;
     }
     &__checkbox:checked ~ &__background {
-        transform: scale(100);
+        transform: scale(110);
     }
     &__checkbox:checked ~ &__wraplist {
         opacity: 1;

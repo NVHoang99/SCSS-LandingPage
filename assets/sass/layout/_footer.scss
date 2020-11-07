@@ -8,8 +8,14 @@
     position: relative;
     &-main {
         text-align: left;
+        @include respond(phone){
+            padding: 0 5rem;
+        }
         &__desc {
             padding: 0 5rem;
+            @include respond(tab-port){
+                padding-bottom: 5rem;
+            }
         }
 
         &__logo {
@@ -92,6 +98,11 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
+            z-index:11;
+            @include respond(phone) {
+                bottom: 0;
+                right: 0;
+            }
             a,
             a:link,
             a:visited {
@@ -109,6 +120,11 @@
                 i {
                     color: $color-white;
                     font-size: 1.8rem;
+                }
+                @include respond(phone) {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
                 }
             }
         }

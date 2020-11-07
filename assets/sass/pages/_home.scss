@@ -7,6 +7,10 @@
         $text-social
     );
 
+    @include respond(tab-land) {
+        padding-bottom: 8rem;
+    }
+
     .u-line--vertical {
         right: 6.5rem;
         top: 0;
@@ -21,7 +25,15 @@
             position: relative;
             overflow: hidden;
             white-space: nowrap;
-            border-right: 1px solid rgba(255, 255, 255, 0.25);
+            &:not(:last-child) {
+                border-right: 1px solid rgba(255, 255, 255, 0.25);
+            }
+            @include respond(tab-land) {
+                border: none !important;
+            }
+            @include respond(phone) {
+                margin: 3rem 0;
+            }
             .stats-count {
                 font-size: 8rem;
                 font-weight: 600;
@@ -30,6 +42,9 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
+                @include respond(tab-land) {
+                    font-size: 6rem;
+                }
             }
         }
     }
@@ -74,6 +89,16 @@
     margin-top: 15rem;
     position: relative;
     z-index:10;
+    @include respond(tab-land){
+        margin-top: 10rem;
+    }
+    @include respond(tab-port){
+        margin-top: 10rem;
+    }
+    @include respond(phone){
+        margin-top: 10rem;
+    }
+
     &-wrap {
         text-align: center;
         position: relative;
@@ -92,6 +117,28 @@
             &:hover,
             &:focus {
                 opacity: 0.8;
+            }
+
+            @include respond(tab-land){
+                padding: 1rem 2rem;
+                img {
+                    max-width: 85%;
+                    margin-left: 7.5%;
+                }
+            }
+            @include respond(tab-port){
+                padding: .5rem 1.5rem;
+                img {
+                    max-width: 80%;
+                    margin-left: 10%;
+                }
+            }
+            @include respond(tab-port){
+                padding: .5rem 1.5rem;
+                img {
+                    max-width: 60%;
+                    margin-left: 20%;
+                }
             }
         }
         &-slider ul {
@@ -134,6 +181,12 @@
             &__slide {
                 padding: 0 150px;
                 outline: none;
+                @include respond(tab-port){
+                    padding: 0 5rem;
+                }
+                @include respond(phone){
+                    padding: 0 3rem;
+                }
                 p {
                     font-family: "lora-regular", serif;
                     font-size: 3rem;
@@ -216,6 +269,9 @@
         font-size: 1.5rem;
         line-height: 2;
         position: relative;
+        @include respond(tab-port) {
+            max-width: 680px !important;
+        }
 
         .contact-form,
         .contact-info {
@@ -224,6 +280,9 @@
 
         .contact-form {
             margin-bottom: 3rem;
+            @include respond(tab-port) {
+                margin-bottom: 10rem;
+            }
             form {
                 fieldset {
                     border: none;
